@@ -1,0 +1,22 @@
+{
+  "name": "oauth-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js | npx pino-pretty",
+    "start": "node app.js"
+  },
+  "type": "module",
+  "repository": "https://github.com/k99sharma/oauth-server.git",
+  "author": "Kalash Sharma <kalash.strt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "pino": "^8.11.0",
+    "pino-pretty": "^10.0.0"
+  }
+}
