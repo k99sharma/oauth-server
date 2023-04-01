@@ -6,12 +6,12 @@ const router = express.Router();
 import { securedResource, unsecuredResource } from "../controllers/test.js";
 
 // importing middleware
-import { allAuth } from "../middleware/auth.js";
+import { authCheck } from "../middleware/auth.js";
 
 // GET: get secured resource
-router.get("/securedResource", allAuth, securedResource);
+router.get("/securedResource", authCheck, securedResource);
 
 // GET: get unsecured resource
-router.get("/unsecuredResource", allAuth, unsecuredResource);
+router.get("/unsecuredResource", unsecuredResource);
 
 export default router;
